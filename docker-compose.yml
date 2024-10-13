@@ -18,6 +18,13 @@ services:
       DB_USER: postgres
       DB_PASSWORD: postgres
       DB_DATABASE: price_tracker
+      COINGECKO_API: ${COINGECKO_API}
+      MAIL_HOST: ${MAIL_HOST}
+      MAIL_PORT: ${MAIL_PORT}
+      MAIL_USER: ${MAIL_USER}
+      MAIL_PASSWORD: ${MAIL_PASSWORD}
+      MAIL_FROM: ${MAIL_FROM}
+      MAIL_TO: ${MAIL_TO}
     depends_on:
       - db
     ports:
